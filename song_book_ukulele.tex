@@ -1,0 +1,32 @@
+\documentclass{article}
+\usepackage{leadsheets}
+\usepackage{guitarchordschemes}
+\usepackage{multicol}
+\usepackage{tabto}
+\usepackage[a4paper, total={7.2in, 10in}]{geometry}
+\usepackage{titlesec}
+\usepackage{array}
+\usepackage{paracol}
+\usepackage{qrcode}
+\usepackage{wrapfig}
+
+\definesongtitletemplate{empty}{} 
+\setleadsheets{verse/numbered=true}
+\setleadsheets{title-template = tabular}
+
+\begin{document}
+\ttfamily
+\small
+
+
+\input{chords_ukulele.tex}
+
+\setlength{\columnsep}{2cm}
+\begin{multicols}{2}
+\tableofcontents
+\end{multicols}
+\setlength{\columnsep}{0.5cm}
+
+\include{let_it_be.tex}
+
+\end{document}

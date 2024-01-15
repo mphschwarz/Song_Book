@@ -11,12 +11,20 @@
 \usepackage{wrapfig}
 \usepackage{mdframed}
 \usepackage{pdflscape}
+\usepackage[strict]{changepage}
 
 \NumTabs{8}
 
 \definesongtitletemplate{empty}{} 
 \setleadsheets{verse/numbered=true}
 \setleadsheets{title-template = tabular}
+
+\newcommand{\startonevenpage}{%
+	\checkoddpage
+	\ifoddpage 
+		~ \newpage
+	\fi%
+}
 
 \defineversetypetemplate{framed}
 {%
@@ -79,6 +87,7 @@
 \include{it_never_rains_in_southern_california.tex}
 \include{have_you_ever_seen_the_rain.tex}
 \include{poison.tex}
+\include{rainbow_in_the_dark.tex}
 \include{tiny_dancer.tex}
 \include{its_my_life.tex}
 

@@ -9,15 +9,15 @@
 \usepackage{paracol}
 \usepackage{qrcode}
 \usepackage{wrapfig}
+\usepackage{mdframed}
+\usepackage{pdflscape}
+\usepackage[strict]{changepage}
 
-\definesongtitletemplate{empty}{} 
-\setleadsheets{verse/numbered=true}
-\setleadsheets{title-template = tabular}
+\include{config.tex}
 
 \begin{document}
 \ttfamily
 \small
-
 
 \input{chords_ukulele.tex}
 
@@ -28,5 +28,11 @@
 \setlength{\columnsep}{0.5cm}
 
 \include{let_it_be.tex}
+\include{yesterday.tex}
+\include{while_my_guitar_gently_weeps.tex}
+\include{ruby_tuesday.tex}
+\include{angie.tex}
+\include{streets_of_london.tex}
+\include{500_miles.tex}
 
 \end{document}

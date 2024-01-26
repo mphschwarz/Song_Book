@@ -12,14 +12,16 @@
 \usepackage{mdframed}
 \usepackage{pdflscape}
 \usepackage[strict]{changepage}
+\usepackage{ifthen}
+
+\newcommand{\instrument}{ukulele}
+\ifthenelse{\equal{\instrument}{guitar}}{\input{chords.tex}}{\input{chords_ukulele.tex}}
 
 \input{config.tex}
 
 \begin{document}
 \ttfamily
 \small
-
-\input{chords.tex}
 
 \setlength{\columnsep}{2cm}
 \begin{multicols}{2}
@@ -84,5 +86,5 @@
 \include{diggy_diggy_hole.tex}
 \include{still_alive.tex}
 
-\include{chord_chart.tex}
+\ifthenelse{\equal{\instrument}{guitar}}{\include{chord_chart.tex}}
 \end{document}

@@ -68,6 +68,7 @@ They can't ^{F} say we never ^{C}tried
 
 \end{song}
 
+\ifthenelse{\equal{\instrument}{guitar}}{%
 \chordAm
 \chordE
 \chordG
@@ -81,4 +82,18 @@ They can't ^{F} say we never ^{C}tried
 	\qrcode{https://open.spotify.com/track/1GcVa4jFySlun4jLSuMhiq?si=0c40de015ce741ca}
 \end{wrapfigure}
 \chordDm
-\chordAmseven
+\chordAmseven%
+}
+{%
+\begin{wrapfigure}{r}{0.1\textwidth}
+	\qrcode{https://open.spotify.com/track/1GcVa4jFySlun4jLSuMhiq?si=0c40de015ce741ca}
+\end{wrapfigure}
+\chordAm
+\chordE
+\chordG
+\chordFsusfour
+\chordF
+\chordC
+\chordDm
+\chordAmseven%
+}

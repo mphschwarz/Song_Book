@@ -32,6 +32,7 @@
 
 \end{song}
 
+\ifthenelse{\equal{\instrument}{guitar}}{%
 \chordF
 \chordEmseven
 \chordAseven
@@ -40,11 +41,26 @@
 \chordBb
 \\~\\
 
+\begin{wrapfigure}{r}{0.2\textwidth}
+	\qrcode{https://open.spotify.com/track/3BQHpFgAp4l80e1XslIjNI?si=7e3ebc419cc54861}
+\end{wrapfigure}
 \chordCseven
 \chordFE
 \chordGseven
 \chordGm
-\chordC
+\chordC%
+}
+{%
 \begin{wrapfigure}{r}{0.2\textwidth}
 	\qrcode{https://open.spotify.com/track/3BQHpFgAp4l80e1XslIjNI?si=7e3ebc419cc54861}
 \end{wrapfigure}
+\chordF
+\chordEmseven
+\chordAseven
+\chordDm
+\chordBb
+\chordCseven
+\chordGseven
+\chordGm%
+}
+

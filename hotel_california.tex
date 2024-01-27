@@ -65,6 +65,7 @@ What a ^{Dm}nice surprise (what a nice surprise), bring your ^{E7}alibis
 \end{outro}
 \end{song}
 
+\ifthenelse{\equal{\instrument}{guitar}}{%
 \begin{tabular}{l l l l }
 \chordAm & 
 \begin{minipage}[t]{3cm}
@@ -141,7 +142,18 @@ What a ^{Dm}nice surprise (what a nice surprise), bring your ^{E7}alibis
 |-2-------------2- \\
 |-0---------------
 \end{minipage}
-\end{tabular}
+\end{tabular}%
+}
+{%
+\chordAm
+\chordEseven
+\chordG
+\chordD
+\chordF
+\chordC
+\chordDm
+\chordE%
+}
 
 \hfill 
 \qrcode{https://open.spotify.com/track/40riOy7x9W7GXjyGp4pjAv?si=7048b189bb6d4056}

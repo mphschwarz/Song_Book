@@ -41,6 +41,7 @@ x 2
 
 \end{song}
 
+\ifthenelse{\equal{\instrument}{guitar}}{%
 \chordAm
 \chordFC
 \chordC
@@ -49,5 +50,14 @@ x 2
 \chordCB
 \chordAmG
 
-\vfill \hfill \qrcode{https://open.spotify.com/track/2LawezPeJhN4AWuSB0GtAU?si=0eddd2eed9604a02}
-
+\vfill \hfill \qrcode{https://open.spotify.com/track/2LawezPeJhN4AWuSB0GtAU?si=0eddd2eed9604a02}%
+}
+{%
+\begin{wrapfigure}{r}{0.2\textwidth}
+	\qrcode{https://open.spotify.com/track/2LawezPeJhN4AWuSB0GtAU?si=0eddd2eed9604a02}
+\end{wrapfigure}
+\chordAm
+\chordF
+\chordC
+\chordG%
+}

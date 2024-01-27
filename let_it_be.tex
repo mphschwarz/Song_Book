@@ -34,6 +34,7 @@ I ^{C}wake up to the ^{G}sound of music, ^{Am}Mother ^{Am/G}Mary ^{Fmaj7}comes t
 
 \end{song}
 
+\ifthenelse{\equal{\instrument}{guitar}}{%
 \chordC
 \chordG
 \chordAm
@@ -42,14 +43,25 @@ I ^{C}wake up to the ^{G}sound of music, ^{Am}Mother ^{Am/G}Mary ^{Fmaj7}comes t
 \chordFsix
 \\~\\
 
+\begin{wrapfigure}{r}{0.2\textwidth}
+	\qrcode{https://open.spotify.com/track/7iN1s7xHE4ifF5povM6A48?si=4b94c6168bdd4858}
+\end{wrapfigure}
 \chordF
 \chordCE
 \chordDmseven
 \chordBb
-\chordFA
-
-\hfill
+\chordFA%
+}
+{%
 \begin{wrapfigure}{r}{0.2\textwidth}
 	\qrcode{https://open.spotify.com/track/7iN1s7xHE4ifF5povM6A48?si=4b94c6168bdd4858}
 \end{wrapfigure}
-
+\chordC
+\chordG
+\chordAm
+\chordFmajseven
+\chordFsix
+\chordF
+\chordDmseven
+\chordBb%
+}

@@ -34,6 +34,7 @@ Verse 1
 
 \end{song}
 
+\ifthenelse{\equal{\instrument}{guitar}}{%
 \chordAm
 \chordG
 \chordA
@@ -55,4 +56,26 @@ Verse 1
 \chordEsusfour
 \begin{wrapfigure}{r}{0.2\textwidth}
 	\qrcode{https://open.spotify.com/track/24s4gcxV9sr1Ph1R29nYyq?si=75d069d1bbb94efc}
+\end{wrapfigure}%
+}
+{%
+\chordAm
+\chordG
+\chordA
+\chordD
+\chordCsharpm
+\chordFsharpmsevenbfive
+\chordE
+\\~\\
+
+\begin{wrapfigure}{r}{0.2\textwidth}
+	\qrcode{https://open.spotify.com/track/24s4gcxV9sr1Ph1R29nYyq?si=75d069d1bbb94efc}
 \end{wrapfigure}
+\chordFsharpm
+\chordFmajseven
+\chordC
+\chordBm
+\chordDsusfour
+\chordDsustwo
+\chordEsusfour%
+}

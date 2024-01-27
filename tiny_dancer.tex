@@ -1,4 +1,4 @@
-\startonevenpage
+\ifthenelse{\equal{\instrument}{guitar}}{\startonevenpage}
 
 \begin{song}{title = Tiny Dancer}
 
@@ -52,6 +52,7 @@ Verse 1
 
 \end{song}
 
+\ifthenelse{\equal{\instrument}{guitar}}{%
 \chordC
 \chordF
 \chordFC
@@ -79,10 +80,35 @@ Verse 1
 \chordGm
 \\~\\
 
-\chordCm
-\chordCE
-\chordGA
 \begin{wrapfigure}{r}{0.1\textwidth}
 	\qrcode{https://open.spotify.com/track/69sJBJdGogAYV74hmB0ORK?si=b0f9279273904d23}
 \end{wrapfigure}
+\chordCm
+\chordCE
+\chordGA%
+}
+{%
+\chordC
+\chordF
+\chordG
+\chordB
+\chordEmseven
+\chordAmseven
+\chordD
+\chordDmseven
+\chordEseven
+\chordAm
+\\~\\
 
+\begin{wrapfigure}{r}{0.1\textwidth}
+	\qrcode{https://open.spotify.com/track/69sJBJdGogAYV74hmB0ORK?si=b0f9279273904d23}
+\end{wrapfigure}
+\chordGseven
+\chordEm
+\chordDm
+\chordGseven
+\chordAb
+\chordBb
+\chordGm
+\chordCm%
+}

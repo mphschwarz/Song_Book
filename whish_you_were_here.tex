@@ -1,6 +1,6 @@
 \begin{song}{title = Whish you were here}
+\ifthenelse{\equal{\instrument}{guitar}}{%
 \begin{intro}
-
 e|-------------------3-3----------------3-3---------| \\
 B|-------------------3-3----------------3-3---------| \\
 G|-------------------0-0------0---------0-0---------| \\
@@ -21,7 +21,9 @@ G|-------------0-0-------| \\
 D|-------------0-0-------| \\
 A|--0-2-0------2-2-------| \\
 E|---------3---3-3-------|
-\end{intro}
+\end{intro}%
+}
+{}
  
 \begin{verse}
 ^{C}So, so you think you can ^{D/F#}tell, \\
@@ -57,8 +59,11 @@ The same old ^{Am}fears. Wish you were here! ^{G}
 \chordG
 \chordAsevensusfour
 \chordC
+\ifthenelse{\equal{\instrument}{guitar}}{%
 \chordDFsharp
-\chordAmE
+\chordAmE%
+}
+{}
 \chordAm
 \begin{wrapfigure}{r}{0.1\textwidth}
 	\qrcode{https://open.spotify.com/track/7aE5WXu5sFeNRh3Z05wwu4?si=7b8ade48a0d54522}

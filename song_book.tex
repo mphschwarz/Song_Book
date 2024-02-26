@@ -14,7 +14,7 @@
 \usepackage[strict]{changepage}
 \usepackage{ifthen}
 
-\newcommand{\instrument}{ukulele}
+\newcommand{\instrument}{guitar}
 \ifthenelse{\equal{\instrument}{guitar}}{\input{chords.tex}}{\input{chords_ukulele.tex}}
 
 \input{config.tex}
@@ -29,62 +29,61 @@
 \end{multicols}
 \setlength{\columnsep}{0.5cm}
 
-\include{let_it_be.tex}
-\include{yesterday.tex}
-\include{while_my_guitar_gently_weeps.tex}
-\include{ruby_tuesday.tex}
-\include{angie.tex}
-\include{streets_of_london.tex}
-\include{500_miles.tex}
+\include{british_pop/let_it_be.tex}
+\include{british_pop/yesterday.tex}
+\include{british_pop/while_my_guitar_gently_weeps.tex}
+\include{british_pop/ruby_tuesday.tex}
+\include{british_pop/angie.tex}
+\include{british_pop/500_miles.tex}
+\include{english_folk/streets_of_london.tex}
 
-\include{bridge_over_troubled_water.tex}
-\include{sound_of_silence.tex}
-\include{the_boxer.tex}
+\include{american_folk/bridge_over_troubled_water.tex}
+\include{american_folk/sound_of_silence.tex}
+\include{american_folk/the_boxer.tex}
+\include{american_folk/house_of_the_rising_sun.tex}
+\include{american_folk/hallelujah.tex}
+\include{american_folk/me_and_bobby_mcgee.tex}
+\include{rock/the_river.tex}
+\include{rock/it_never_rains_in_southern_california.tex}
+\include{american_folk/have_you_ever_seen_the_rain.tex}
+\include{heavy_metal/poison.tex}
+\include{heavy_metal/rainbow_in_the_dark.tex}
+\include{british_pop/tiny_dancer.tex}
+\include{rock/its_my_life.tex}
 
-\include{jolene.tex}
-\include{house_of_the_rising_sun.tex}
-\include{hallelujah.tex}
-\include{me_and_bobby_mcgee.tex}
-\include{the_river.tex}
-\include{it_never_rains_in_southern_california.tex}
-\include{have_you_ever_seen_the_rain.tex}
-\include{poison.tex}
-\include{rainbow_in_the_dark.tex}
-\include{tiny_dancer.tex}
-\include{its_my_life.tex}
+\include{rock/sweet_home_alabama.tex}
+\include{american_folk/country_roads.tex}
+\include{country/city_of_new_orleans.tex}
+\include{country/jolene.tex}
+\include{country/ghost_riders.tex}
+\include{rock/bad_company.tex}
+\include{rock/hotel_california.tex}
 
-\include{sweet_home_alabama.tex}
-\include{country_roads.tex}
-\include{city_of_new_orleans.tex}
-\include{ghost_riders.tex}
-\include{bad_company.tex}
-\include{hotel_california.tex}
+\include{rock/because_the_night.tex}
+\include{rock/the_chain.tex}
+\include{rock/moonlight_shadow.tex}
+\include{rock/lady_in_black.tex}
+\include{rock/wind_of_change.tex}
+\include{pop/summer_wine.tex}
 
-\include{because_the_night.tex}
-\include{the_chain.tex}
-\include{moonlight_shadow.tex}
-\include{stand_by_me.tex}
-\include{lady_in_black.tex}
-\include{wind_of_change.tex}
-\include{summer_wine.tex}
+\include{italian_folk/bella_ciao.tex}
 
-\include{bella_ciao.tex}
+\include{blues/stand_by_me.tex}
+\include{blues/autumn_leaves.tex}
+\include{blues/aint_no_sunshine.tex}
 
-\include{autumn_leaves.tex}
-\include{aint_no_sunshine.tex}
+\include{rock/whish_you_were_here.tex}
+\include{rock/brothers_in_arms.tex}
+\include{pop/the_earth.tex}
 
-\include{whish_you_were_here.tex}
-\include{brothers_in_arms.tex}
-\include{the_earth.tex}
+\include{irish_folk/whiskey_in_the_jar.tex}
+\include{irish_folk/foggy_dew.tex}
+\include{irish_folk/molly_malone.tex}
+\include{irish_folk/irish_blessing.tex}
+\include{english_folk/scarborough_fair.tex}
 
-\include{whiskey_in_the_jar.tex}
-\include{foggy_dew.tex}
-\include{molly_malone.tex}
-\include{irish_blessing.tex}
-\include{scarborough_fair.tex}
-
-\include{diggy_diggy_hole.tex}
-\include{still_alive.tex}
+\include{fun/diggy_diggy_hole.tex}
+\include{fun/still_alive.tex}
 
 \ifthenelse{\equal{\instrument}{guitar}}{\include{chord_chart.tex}}{}
 \end{document}

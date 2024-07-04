@@ -2,6 +2,7 @@
 \begin{paracol}{2}
 \begin{song}{title = Fortunate Son}
 
+\ifthenelse{\equal{\instrument}{guitar}}{%
 \begin{intro} 
 e|-----3-----1-------------------| \\
 B|-----------------5-----3-------| \\
@@ -13,7 +14,13 @@ E|-------------------------------| x2 \\
 or
 
 _{G} _{F} _{C} _{G} x2
-\end{intro}
+\end{intro}%
+}
+{%
+\begin{intro}
+_{G} _{F} _{C} _{G} x2
+\end{intro}%
+}
 
 \begin{verse}
 ^{G}Some folks are born ^{F}made to wave the flag, \\

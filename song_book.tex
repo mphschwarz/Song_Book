@@ -48,7 +48,7 @@
 \include{american_folk/have_you_ever_seen_the_rain.tex}
 \include{american_folk/fortunate_son.tex}
 \include{heavy_metal/poison.tex}
-\include{heavy_metal/for_whom_the_bell_tolls.tex}
+\ifthenelse{\equal{\instrument}{guitar}}{\include{heavy_metal/for_whom_the_bell_tolls.tex}}{}
 \include{heavy_metal/rainbow_in_the_dark.tex}
 \include{british_pop/tiny_dancer.tex}
 \include{rock/its_my_life.tex}
@@ -75,10 +75,13 @@
 \include{blues/stand_by_me.tex}
 \include{blues/autumn_leaves.tex}
 \include{blues/aint_no_sunshine.tex}
+\include{rock/layla.tex}
 
-\include{rock/whish_you_were_here.tex}
+\include{rock/wish_you_were_here.tex}
 \include{rock/brothers_in_arms.tex}
 \include{pop/the_earth.tex}
+\include{rock/work_song.tex}
+\include{rock/take_me_to_church.tex}
 
 \include{irish_folk/whiskey_in_the_jar.tex}
 \include{irish_folk/foggy_dew.tex}

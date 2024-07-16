@@ -6,12 +6,16 @@
 	x-unit=0.4cm, 
 	y-unit=0.4cm, 
 }
+\newcommand{\chordAb}{\chordscheme[name = \writechord{Ab}, 			position = 2, finger = {4/4:3, 3/2:2}, 							barre = {2/1-4}]}
 
 \newcommand{\chordA}{\chordscheme[name = \writechord{A}, 			position = 1, finger = {2/4:2, 1/3:1}, 				ring = {1, 2}]}
 \newcommand{\chordAbarre}{\chordscheme[name = \writechord{A}, 			position = 1, finger = {2/4:2, 1/3:1}, 				ring = {1, 2}]}
 \newcommand{\chordAsevensusfour}{\chordscheme[name = \writechord{A7sus4}, 	position = 1, finger = {2/3:2}, 				ring = {1, 2, 4}]}
+\newcommand{\chordAseven}{\chordscheme[name = \writechord{A7}, 			position = 1, finger = {1/3:1}, 				ring = {1, 2, 4}]}
+\newcommand{\chordAmajseven}{\chordscheme[name = \writechord{Amaj7}, 		position = 1, finger = {1/4:2, 1/3:3}, 				ring = {1, 2}]}
 
-\newcommand{\chordAb}{\chordscheme[name = \writechord{Ab}, 			position = 2, finger = {4/4:3, 3/2:2}, 							barre = {2/1-4}]}
+\newcommand{\chordAfive}{\chordscheme[name = \writechord{A5},			position = 1, finger = {2/4:1, 4/3:3},				ring = {1, 2}]}
+\newcommand{\chordAfivefive}{\chordAfive}
 
 \newcommand{\chordAm}{\chordscheme[name = \writechord{Am}, 			position = 1, finger = {4/3:3, 3/1:2}, 							barre = {2/1-4}]}
 \newcommand{\chordAmsix}{\chordscheme[name = \writechord{Am6}, 			position = 1, 							ring = {1, 2, 3, 4}]}
@@ -20,7 +24,7 @@
 \newcommand{\chordAmE}{\chordscheme[name = \writechord{Am/E}, 			position = 1, finger = {2/4:2}, 				ring = {1, 2, 3}]}
 \newcommand{\chordAmG}{\chordscheme[name = \writechord{Am/G}, 			position = 1, finger = {2/4:2}, 				ring = {1, 2, 3}]}
 
-\newcommand{\chordAseven}{\chordscheme[name = \writechord{A7}, 			position = 1, finger = {1/3:1}, 				ring = {1, 2, 4}]}
+\newcommand{\chordAsharp}{\chordscheme[name = \writechord{A\#}, 		position = 1, finger = {3/4:3, 2/3:2}, 							barre = {1/1-2}]}
 
 \newcommand{\chordBb}{\chordscheme[name = \writechord{Bb}, 			position = 1, finger = {3/4:3, 2/3:2}, 				ring = {1, 2},		barre = {1/1-2}]}
 \newcommand{\chordBbmsixbarre}{\chordscheme[name = \writechord{Bb6}, 		position = 1, 			 				ring = {1},		barre = {1/1-3}]}
@@ -28,6 +32,8 @@
 \newcommand{\chordB}{\chordscheme[name = \writechord{B}, 			position = 1, finger = {4/4:3, 3/3:2}, 							barre = {1/1-2}]}
 \newcommand{\chordBseven}{\chordscheme[name = \writechord{B7}, 			position = 1, finger = {3/3:2}, 							barre = {2/1-4}]}
 \newcommand{\chordBsusfour}{\chordscheme[name = \writechord{Bsus4}, 		position = 1, finger = {4/4:3, 4/3:4}, 							barre = {2/1-2}]}
+
+\newcommand{\chordBfive}{\chordscheme[name = \writechord{B5}, 			position = 11, finger = {1/4:1, 1/3:1, 4/2:4, 4/1:4}]}
 
 \newcommand{\chordBm}{\chordscheme[name = \writechord{Bm}, 			position = 1, finger = {4/4:3},								barre = {2/1-3}]}
 \newcommand{\chordBmsixbarre}{\chordscheme[name = \writechord{Bm6}, 		position = 1, finger = {1/4:1, 2/3:2, 2/2:3, 2/1:4}]}
@@ -45,7 +51,7 @@
 \newcommand{\chordCsharpdim}{\chordscheme[name = \writechord{C\#dim}, 		position = 1, finger = {1/3:1, 4/1:4}, 				ring = {4, 2}]}
 
 \newcommand{\chordCsharpm}{\chordscheme[name = \writechord{C\#m}, 		position = 1, finger = {1/4:1}, 							barre = {4/1-3}]}
-\newcommand{\chordCsharpmseven}{\chordscheme[name = \writechord{C\#m7}, 		position = 1, finger = {1/4:1, 1/3:2, 2/1:3},			ring = {2}]}
+\newcommand{\chordCsharpmseven}{\chordscheme[name = \writechord{C\#m7}, 	position = 1, finger = {1/4:1, 1/3:2, 2/1:3},			ring = {2}]}
 
 \newcommand{\chordD}{\chordscheme[name = \writechord{D}, 			position = 1, finger = {2/4:1, 2/3:2, 2/2:3},			ring = {1}]}
 \newcommand{\chordDbarre}{\chordscheme[name = \writechord{D}, 			position = 1, finger = {2/4:1, 2/3:2, 2/2:3},			ring = {1}]}
@@ -55,6 +61,8 @@
 \newcommand{\chordDmajseven}{\chordscheme[name = \writechord{Dmaj7}, 		position = 1, finger = {4/1:3},								barre = {2/1-4}]}
 \newcommand{\chordDsevenFsharp}{\chordscheme[name = \writechord{D7/F\#}, 	position = 1, finger = {3/1:2},								barre = {2/1-4}]}
 \newcommand{\chordDFsharp}{\chordscheme[name = \writechord{D/F\#}, 		position = 1, finger = {2/4:1, 2/3:2, 2/2:3},			ring = {1}]}
+
+\newcommand{\chordDfive}{\chordscheme[name = \writechord{D5},			position = 2, finger = {1/4:1, 1/3:2, 4/3:4},			ring = {1}]}
 
 \newcommand{\chordDm}{\chordscheme[name = \writechord{Dm}, 			position = 1, finger = {2/4:2, 2/3:3, 1/2:1},			ring = {1}]}
 \newcommand{\chordDmseven}{\chordscheme[name = \writechord{Dm7}, 		position = 1, finger = {2/4:2, 2/3:3, 1/2:1, 3/1:3}]}
@@ -68,9 +76,11 @@
 \newcommand{\chordDsharpm}{\chordscheme[name = \writechord{D\#m}, 		position = 1, finger = {3/4:3, 3/3:4, 2/2:2, 1/1:1}]}
 
 \newcommand{\chordE}{\chordscheme[name = \writechord{E}, 			position = 1, finger = {1/4:1, 4/3:4, 2/1:2}, 			ring = {2}]}
-\newcommand{\chordEbarre}{\chordscheme[name = \writechord{E}, 			position = 1, finger = {1/4:1, 4/3:4, 2/1:2}, 			ring = {2}]}
+\newcommand{\chordEbarre}{\chordE}
 \newcommand{\chordEseven}{\chordscheme[name = \writechord{E7}, 			position = 1, finger = {1/4:1, 2/3:2, 2/1:3}, 			ring = {2}]}
 \newcommand{\chordEsusfour}{\chordscheme[name = \writechord{Esus4}, 		position = 1, finger = {3/4:1, 3/3:2}]}
+
+\newcommand{\chordEfive}{\chordscheme[name = \writechord{E5},			position = 1, finger = {4/4:3, 4/3:4, 2/1:1},			ring = {2}]}
 
 \newcommand{\chordEm}{\chordscheme[name = \writechord{Em}, 			position = 1, finger = {4/3:3, 3/2:2, 2/1:1}, 			ring = {4}]}
 \newcommand{\chordEmbarre}{\chordEm}
@@ -85,9 +95,13 @@
 \newcommand{\chordFC}{\chordscheme[name = \writechord{F/C}, 			position = 1, finger = {2/4:2, 1/2:1},				ring = {3, 1}]}
 \newcommand{\chordFE}{\chordscheme[name = \writechord{F/E}, 			position = 1, finger = {2/4:2, 1/2:1},				ring = {3, 1}]}
 
+\newcommand{\chordFfive}{\chordscheme[name = \writechord{F5}, 			position = 5, finger = {1/4:1, 4/2:3, 4/1:4},			ring = {3}]}
+
 \newcommand{\chordFsharp}{\chordscheme[name = \writechord{F\#}, 		position = 1, finger = {3/4:3, 2/2:2},							barre = {1/1-3}]}
 \newcommand{\chordFsharpsusfour}{\chordscheme[name = \writechord{F\#sus4}, 	position = 1, finger = {4/4:4, 2/3:1, 2/2:2, 2/1:3}]}
 \newcommand{\chordFsharpseven}{\chordscheme[name = \writechord{F\#7}, 		position = 1, finger = {3/4:2, 4/3:3, 2/2:1, 4/1:4}]}
+
+\newcommand{\chordFsharpfive}{\chordscheme[name = \writechord{F\#5}, 		position = 6, finger = {1/3:1, 4/2:3, 4/1:4},									mute = {4}]}
 
 \newcommand{\chordFsharpm}{\chordscheme[name = \writechord{F\#m}, 		position = 1, finger = {2/4:2, 1/3:1, 2/2:3},			ring = {1}]}
 \newcommand{\chordFsharpmsevenbfive}{\chordscheme[name = \writechord{F\#m7b5}, 	position = 1, finger = {2/4:1, 4/3:3, 2/2:2, 4/1:4}]}
@@ -102,6 +116,8 @@
 \newcommand{\chordGA}{\chordscheme[name = \writechord{G/A}, 			position = 1, finger = {2/3:1, 3/2:3, 2/1:2}, 			ring = {4}]}
 \newcommand{\chordGB}{\chordscheme[name = \writechord{G/B}, 			position = 1, finger = {2/3:1, 3/2:3, 2/1:2}, 			ring = {4}]}
 \newcommand{\chordGD}{\chordscheme[name = \writechord{G/D}, 			position = 1, finger = {2/3:1, 3/2:3, 2/1:2}, 			ring = {4}]}
+
+\newcommand{\chordGfive}{\chordscheme[name = \writechord{G5},			position = 1, finger = {2/3:1, 3/2:2, 5/1:4},			ring = {4}]}
 
 \newcommand{\chordGm}{\chordscheme[name = \writechord{Gm}, 			position = 1, finger = {2/3:2, 3/2:3, 1/1:2}, 			ring = {4}]}
 

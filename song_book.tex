@@ -15,6 +15,7 @@
 \usepackage{ifthen}
 
 \newcommand{\instrument}{guitar}
+\newcommand{\chordtable}{false}
 \ifthenelse{\equal{\instrument}{guitar}}{\input{chords.tex}}{\input{chords_ukulele.tex}}
 
 \input{config.tex}
@@ -46,6 +47,8 @@
 \include{american_folk/me_and_bobby_mcgee.tex}
 \include{rock/the_river.tex}
 \include{rock/it_never_rains_in_southern_california.tex}
+\include{pop/california_dreaming.tex}
+
 \include{american_folk/have_you_ever_seen_the_rain.tex}
 \include{american_folk/fortunate_son.tex}
 \include{heavy_metal/poison.tex}
@@ -65,6 +68,8 @@
 \include{rock/hotel_california.tex}
 
 \include{rock/because_the_night.tex}
+\include{rock/fat_bottomed_girls.tex}
+\include{rock/the_show_must_go_on.tex}
 \include{rock/the_chain.tex}
 \include{rock/moonlight_shadow.tex}
 \include{rock/lady_in_black.tex}
@@ -77,7 +82,9 @@
 \include{blues/stand_by_me.tex}
 \include{blues/autumn_leaves.tex}
 \include{blues/aint_no_sunshine.tex}
+\include{blues/wasting_time.tex}
 \include{rock/layla.tex}
+\include{rock/bell_bottom_blues.tex}
 
 \include{rock/wish_you_were_here.tex}
 \include{rock/brothers_in_arms.tex}
@@ -94,5 +101,5 @@
 \include{fun/diggy_diggy_hole.tex}
 \include{fun/still_alive.tex}
 
-\ifthenelse{\equal{\instrument}{guitar}}{\include{chord_chart.tex}}{}
+\ifthenelse{\equal{\instrument}{true}}{\include{chord_chart.tex}}{}
 \end{document}

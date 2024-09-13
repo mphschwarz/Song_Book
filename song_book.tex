@@ -1,4 +1,4 @@
-\documentclass{article}
+\documentclass[titlepage]{article}
 \usepackage{leadsheets}
 \usepackage{guitarchordschemes}
 \usepackage{multicol}
@@ -20,9 +20,15 @@
 
 \input{config.tex}
 
+\title{Song book}
+\author{Michael Schwarz}
+\newpage
+
 \begin{document}
 \ttfamily
 \small
+
+\maketitle
 
 \setlength{\columnsep}{2cm}
 \begin{multicols}{2}
@@ -103,5 +109,5 @@
 \include{fun/diggy_diggy_hole.tex}
 \include{fun/still_alive.tex}
 
-\ifthenelse{\equal{\instrument}{true}}{\include{chord_chart.tex}}{}
+\ifthenelse{\equal{\instrument}{guitar}}{\include{chord_chart.tex}}{}
 \end{document}

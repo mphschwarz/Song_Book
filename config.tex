@@ -4,9 +4,10 @@
 \setleadsheets{verse/numbered=true}
 \setleadsheets{title-template = tabular}
 
-\newcommand{\startonevenpage}{%
+\newcommand{\startonoddpage}{%
 	\checkoddpage
 	\ifoddpage 
+	\else
 		~ \newpage
 	\fi%
 }
